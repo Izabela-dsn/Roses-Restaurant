@@ -75,7 +75,7 @@ main {
 }
 
 .calculator .bill {
-  background-image: url(/images/icon-dollar.svg);
+  background-image: url(./images/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position: left 5% center;
   background-size: 0.8rem;
@@ -107,7 +107,7 @@ main {
 }
 
 .calculator .number-people {
-  background-image: url(/images/icon-person.svg);
+  background-image: url(./images/icon-person.svg);
   background-repeat: no-repeat;
   background-position: left 5% center;
   background-size: 0.8rem;
