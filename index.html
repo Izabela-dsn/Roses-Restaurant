@@ -25,45 +25,56 @@
     <header>
       <img src="/images/logo.svg" alt="Splitter" />
     </header>
+
     <main>
       <div class="container">
         <div class="calculator">
           <label for="amount-bill">Bill</label>
-          <img src="/images/icon-dollar.svg" alt="dollar icon" />
-          <input type="number" class="bill" id="amount-bill" />
+          <input
+            type="number"
+            class="bill"
+            id="amount-bill"
+            placeholder="0"
+            required
+          />
 
+          <label>Select Tip %</label>
           <section class="tips">
-            <label>Select Tip %</label>
             <button class="percentage">5%</button>
             <button class="percentage">10%</button>
             <button class="percentage">15%</button>
             <button class="percentage">25%</button>
             <button class="percentage">50%</button>
-            <input type="number" class="custom" />
+            <input type="number" class="custom" placeholder="Custom" />
           </section>
 
-          <label for="number-people">Number of People</label>
-          <img src="/images/icon-person.svg" alt="person icon" />
-          <input type="number" class="number-people" id="number-people" />
+          <label for="people">Number of People</label>
+          <input
+            type="number"
+            class="number-people"
+            id="people"
+            placeholder="0"
+            required
+          />
         </div>
         <div class="results">
           <section class="show-results">
-            <div class="tip-amount">
+            <div class="total">
               <p>
-                Tip Amount <br />
-                / person
+                Tip Amount
+                <legend>/ person</legend>
               </p>
-              <p>$0.00</p>
+              <p>$4.27</p>
             </div>
             <div class="total">
               <p>
-                Total <br />
-                / person
+                Tip Amount
+                <legend>/ person</legend>
               </p>
               <p>$0.00</p>
             </div>
           </section>
-          <button>Reset</button>
+          <button class="btn-reset">Reset</button>
         </div>
       </div>
     </main>
