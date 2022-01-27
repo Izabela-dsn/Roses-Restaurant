@@ -9,11 +9,11 @@ const campoTotal = document.querySelector('.total-person')
 const campoGorjeta = document.querySelector('.tip')
 
 // botão reset
-btnReset = document.querySelector('.btn-reset')
+const btnReset = document.querySelector('.btn-reset')
 
 // pegar porcentagem de gorjeta
 var btnGorjeta = document.querySelectorAll('.percentage')
-const tipCustom = document.querySelector('.custom')
+const inputGorjetaCustom = document.querySelector('.custom')
 
 // itero sobre cada botão de porcentagem de gorjeta
 for (let btn of btnGorjeta) {
@@ -37,7 +37,7 @@ function calculo() {
   var gorjetaValor = 0
 
   // verificar se o campo de gorjeta está vazio ou se há porcentagem de gorjeta
-  if (tipCustom.value === '') {
+  if (inputGorjetaCustom.value === '') {
     //se estiver vazio busque os botões
     for (let bt of btnGorjeta) {
       // quando o botão foi clicado ele recebeu mais uma classe -> active
@@ -47,7 +47,7 @@ function calculo() {
       }
     }
   } else {
-    gorjetaValor = parseFloat(tipCustom.value) / 100
+    gorjetaValor = parseFloat(inputGorjetaCustom.value) / 100
   }
 
   // colocar os valores em duas variáveis 1-gorjeta total por pessoa e 2-total por pessoa
@@ -68,7 +68,7 @@ numPessoas.addEventListener('mouseout', calculo)
 btnReset.addEventListener('click', () => {
   valorConta.value = ''
   numPessoas.value = ''
-  tipCustom.value = ''
+  inputGorjetaCustom.value = ''
   campoGorjeta.innerText = '$0.00'
   campoTotal.innerText = '$0.00'
   resetBtnGorjeta()
