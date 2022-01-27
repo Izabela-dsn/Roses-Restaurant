@@ -29,33 +29,35 @@
     <main>
       <div class="container">
         <div class="calculator">
-          <label for="amount-bill">Bill</label>
-          <input
-            type="number"
-            class="bill"
-            id="amount-bill"
-            placeholder="0"
-            required
-          />
+          <form>
+            <label for="amount-bill">Bill</label>
+            <input
+              type="number"
+              class="bill"
+              id="amount-bill"
+              placeholder="0"
+              required
+            />
 
-          <label>Select Tip %</label>
-          <section class="tips">
-            <button class="percentage">5%</button>
-            <button class="percentage">10%</button>
-            <button class="percentage">15%</button>
-            <button class="percentage">25%</button>
-            <button class="percentage">50%</button>
-            <input type="number" class="custom" placeholder="Custom" />
-          </section>
+            <label>Select Tip %</label>
+            <section class="tips">
+              <button class="percentage" value="0.05">5%</button>
+              <button class="percentage" value="0.10">10%</button>
+              <button class="percentage" value="0.15">15%</button>
+              <button class="percentage" value="0.25">25%</button>
+              <button class="percentage" value="0.5">50%</button>
+              <input type="number" class="custom" placeholder="Custom" id="6" />
+            </section>
 
-          <label for="people">Number of People</label>
-          <input
-            type="number"
-            class="number-people"
-            id="people"
-            placeholder="0"
-            required
-          />
+            <label for="people">Number of People</label>
+            <input
+              type="number"
+              class="number-people"
+              id="people"
+              placeholder="0"
+              required
+            />
+          </form>
         </div>
         <div class="results">
           <section class="show-results">
@@ -64,14 +66,14 @@
                 Tip Amount
                 <legend>/ person</legend>
               </p>
-              <p>$4.27</p>
+              <p class="tip">$0.00</p>
             </div>
             <div class="total">
               <p>
                 Total
                 <legend>/ person</legend>
               </p>
-              <p>$0.00</p>
+              <p class="total-person">$0.00</p>
             </div>
           </section>
           <button class="btn-reset">Reset</button>
@@ -86,4 +88,5 @@
       >. Coded by <a href="#">Izabela da Silva Neves</a>.
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>

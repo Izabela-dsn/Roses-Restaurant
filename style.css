@@ -100,6 +100,10 @@ main {
   cursor: pointer;
 }
 
+.calculator .tips .percentage.active {
+  background: var(--Strong-cyan);
+}
+
 .calculator .tips .custom {
   width: 92%;
   font: var(--input-custom);
@@ -160,6 +164,10 @@ main {
   border: none;
   background: var(--Strong-cyan);
   cursor: pointer;
+}
+
+.btn-reset:hover {
+  background: yellow;
 }
 
 /* f o o t e r */
