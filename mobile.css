@@ -1,3 +1,12 @@
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .btn-reset {
+    margin-bottom: 1rem;
+  }
+}
 @media (max-width: 375px) {
   header {
     margin: 3rem auto;
@@ -5,14 +14,8 @@
   main {
     margin: 0 1rem;
   }
-  .container {
-    grid-template-columns: 1fr;
-    padding: 2rem;
-  }
+
   .total:last-child {
     margin-bottom: 4rem;
-  }
-  .btn-reset {
-    margin-bottom: 1rem;
   }
 }
