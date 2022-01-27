@@ -15,11 +15,13 @@ btnReset = document.querySelector('.btn-reset')
 var btnGorjeta = document.querySelectorAll('.percentage')
 const tipCustom = document.querySelector('.custom')
 
+// itero sobre cada botão de porcentagem de gorjeta
 for (let btn of btnGorjeta) {
+  // add evento de click
   btn.addEventListener('click', e => {
+    // quando clico add a classe -> active
     e.preventDefault
-    btn.classList.toggle('active')
-    calculo
+    btn.classList.add('active')
   })
 }
 
@@ -59,12 +61,14 @@ function calculo() {
   campoTotal.innerText = `$${total.toFixed(2)}`
 }
 
+// add evento: quando o mouse sai do input (nesse caso) a função calculo e chamada(?)
 numPessoas.addEventListener('mouseout', calculo)
 
 // botão reset
 btnReset.addEventListener('click', () => {
   valorConta.value = ''
   numPessoas.value = ''
+  tipCustom.value = ''
   campoGorjeta.innerText = '$0.00'
   campoTotal.innerText = '$0.00'
   resetBtnGorjeta()
