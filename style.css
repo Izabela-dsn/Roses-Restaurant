@@ -1,6 +1,7 @@
 :root {
   /* C o l o r s */
   --Strong-cyan: hsl(172, 67%, 45%);
+  --Strong-light-cyan: hsl(173, 61%, 77%);
   --Very-dark-cyan: hsl(183, 100%, 15%);
   --Dark-grayish-cyan: hsl(186, 14%, 43%);
   --less-dark-grayish-cyan: hsl(184, 14%, 56%);
@@ -37,6 +38,10 @@ input[type='number'] {
   text-align: right;
 }
 
+input[type='number']:hover {
+  border: 3px solid #5ba99e;
+}
+
 /* S P E C I F I C */
 body {
   background: var(--Light-grayish-cyan);
@@ -60,13 +65,9 @@ main {
   padding: 4rem;
   border-radius: 1.5rem;
   background: var(--White);
+  box-shadow: 4px 4px 30px 1px rgba(127, 145, 147, 0.5);
 }
 
-/*
-.calculator {
-  background: violet;
-}
-*/
 .calculator label {
   display: flex;
   font: var(--label);
@@ -100,8 +101,14 @@ main {
   cursor: pointer;
 }
 
+.calculator .tips .percentage:hover {
+  background: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+}
+
 .calculator .tips .percentage.active {
   background: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
 }
 
 .calculator .tips .custom {
@@ -167,7 +174,7 @@ main {
 }
 
 .btn-reset:hover {
-  background: yellow;
+  background: var(--Strong-light-cyan);
 }
 
 /* f o o t e r */
