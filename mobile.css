@@ -7,12 +7,26 @@
     margin-bottom: 1rem;
   }
 }
+@media (max-width: 625px) {
+  main {
+    margin: 0 1rem;
+  }
+  input[type='number'] {
+    font-size: 20px;
+  }
+  .calculator label {
+    font-size: 22px;
+  }
+  .calculator .tips .percentage {
+    font-size: 24px;
+  }
+  .total p:last-child {
+    font-size: 30px;
+  }
+}
 @media (max-width: 375px) {
   header {
     margin: 3rem auto;
-  }
-  main {
-    margin: 0 1rem;
   }
 
   .total:last-child {
