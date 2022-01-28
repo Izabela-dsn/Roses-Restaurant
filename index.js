@@ -20,7 +20,7 @@ for (let btn of btnGorjeta) {
   // add evento de click
   btn.addEventListener('click', e => {
     // quando clico add a classe -> active
-    e.preventDefault
+    e.preventDefault()
     btn.classList.add('active')
   })
 }
@@ -33,9 +33,9 @@ function resetBtnGorjeta() {
 }
 
 // fazer calculo
-function calculo() {
-  var gorjetaValor = 0
+var gorjetaValor = 0
 
+function calculo() {
   // verificar se o campo de gorjeta está vazio ou se há porcentagem de gorjeta
   if (inputGorjetaCustom.value === '') {
     //se estiver vazio busque os botões
@@ -61,16 +61,20 @@ function calculo() {
   campoTotal.innerText = `$${total.toFixed(2)}`
 }
 
-// add evento: quando o mouse sai do input (nesse caso) a função calculo e chamada(?)
-numPessoas.addEventListener('mouseout', calculo)
-
 // botão reset
-btnReset.addEventListener('click', () => {
+btnReset.addEventListener('click', e => {
+  e.preventDefault()
   valorConta.value = ''
   numPessoas.value = ''
   inputGorjetaCustom.value = ''
   campoGorjeta.innerText = '$0.00'
   campoTotal.innerText = '$0.00'
   resetBtnGorjeta()
-  gorjetaValor.value = ''
+  gorjetaValor = 0
 })
+
+// add evento: quando o mouse sai do input (nesse caso) a função calculo é chamada(?)
+//const form = document.querySelector('form')
+//form.addEventListener('submit', calculo)
+numPessoas.addEventListener('mouseout', calculo, false)
+numPessoas.addEventListener('touchstart', calculo, false)
