@@ -17,21 +17,22 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
 
     <title>FM | Tip calculator</title>
   </head>
   <body>
     <header>
       <img src="./images/logo.svg" alt="Splitter" />
+      <p class="restaurant-name">&#38; Rose's</p>
     </header>
 
     <main>
       <div class="container">
         <div class="calculator">
           <form>
-            <label for="amount-bill">Bill</label>
+            <label for="amount-bill">Total da conta</label>
             <input
               type="number"
               class="bill"
@@ -40,17 +41,17 @@
               required
             />
 
-            <label>Select Tip %</label>
+            <label>Escolha a gorjeta %</label>
             <section class="tips">
               <button class="percentage" value="0.05">5%</button>
               <button class="percentage" value="0.10">10%</button>
               <button class="percentage" value="0.15">15%</button>
               <button class="percentage" value="0.25">25%</button>
               <button class="percentage" value="0.5">50%</button>
-              <input type="number" class="custom" placeholder="Custom" id="6" />
+              <input type="number" class="custom" placeholder="Valor" />
             </section>
 
-            <label for="people">Number of People</label>
+            <label for="people">Número de Pessoas</label>
             <input
               type="number"
               class="number-people"
@@ -58,36 +59,42 @@
               placeholder="0"
               required
             />
+
+            <button class="btn btn-calculate">Calcular</button>
           </form>
         </div>
         <div class="results">
           <section class="show-results">
             <div class="total">
               <p>
-                Tip Amount
-                <legend>/ person</legend>
+                Gorjeta
+                <legend>/ pessoa</legend>
               </p>
               <p class="tip">$0.00</p>
             </div>
             <div class="total">
               <p>
                 Total
-                <legend>/ person</legend>
+                <legend>/ pessoa</legend>
               </p>
               <p class="total-person">$0.00</p>
             </div>
           </section>
-          <button class="btn-reset">Reset</button>
+          <button class="btn btn-reset">Apagar</button>
+          <button class="btn btn-payment">Ir para o pagamento</button>
         </div>
       </div>
     </main>
 
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    <!--
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Izabela da Silva Neves</a>.
-    </footer>
+        >. Coded by <a href="#">Izabela da Silva Neves</a>.
+      </footer>
+    -->
   </body>
-  <script src="index.js"></script>
+  <script src="main.js"></script>
 </html>

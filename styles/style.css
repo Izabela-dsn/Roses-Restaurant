@@ -1,0 +1,223 @@
+:root {
+  /* C o l o r s */
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Strong-light-cyan: hsl(173, 61%, 77%);
+  --Strong-light-cyn: hsl(173, 39%, 69%);
+
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --less-dark-grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Light-more-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+
+  /* T y p o g r a p h y */
+  --label: 700 24px "Space Mono";
+  --input: 700 22px "Space Mono";
+  --input-custom: 700 20px "Space Mono";
+  --btn-percentage: 700 26px "Space Mono";
+  --btn-reset: 700 20px "Space Mono";
+  --total: 700 18px "Space Mono";
+}
+
+/* G E N E R A L */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+input[type="number"] {
+  border: none;
+  outline: 0;
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.2rem;
+  width: 100%;
+
+  background: whitesmoke;
+  color: var(--Very-dark-cyan);
+  font: var(--input);
+  text-align: right;
+}
+
+input[type="number"]:hover {
+  border: 3px solid #5ba99e;
+}
+
+.btn {
+  width: 88%;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.2rem;
+
+  font: var(--btn-reset);
+  text-transform: uppercase;
+
+  border: none;
+  cursor: pointer;
+}
+
+/* S P E C I F I C */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: url(../images/restaurant.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  margin: 4rem auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+main {
+  margin: 0 10rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 4rem;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  /*box-shadow: 4px 4px 30px 1px rgba(127, 145, 147, 0.5);*/
+}
+
+.calculator label {
+  display: flex;
+  font: var(--label);
+  color: var(--White);
+  margin-bottom: 0.5rem;
+}
+
+.calculator .bill {
+  background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left 5% center;
+  background-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.calculator .tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.calculator .tips .percentage {
+  width: 100%;
+  padding: 0.5rem 0.2rem;
+  font: var(--btn-percentage);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--Very-dark-cyan);
+  background: var(--Strong-light-cyn);
+  cursor: pointer;
+}
+
+.calculator .tips .percentage:hover,
+.calculator .tips .percentage.active {
+  background: var(--Very-dark-cyan);
+  color: var(--White);
+}
+
+.calculator .tips .custom {
+  width: 92%;
+  font: var(--input-custom);
+  border-radius: 0.5rem;
+}
+
+.calculator .number-people {
+  background-image: url(../images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left 5% center;
+  background-size: 0.8rem;
+}
+
+.btn-calculate {
+  margin-top: 2rem;
+  color: var(--Very-dark-cyan);
+  background: var(--Strong-cyan);
+}
+
+.btn-calculate:hover {
+  background: var(--Very-dark-cyan);
+  color: var(--White);
+}
+
+.results {
+  background: whitesmoke;
+  border-radius: 0.5rem;
+}
+
+.show-results {
+  padding: 3rem 2rem;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.total p {
+  font: var(--total);
+  color: var(--Dark-grayish-cyan);
+}
+
+.total p:last-child {
+  color: var(--Strong-cyan);
+  font-size: 40px;
+}
+
+.total legend {
+  font: 400 15px "Space Mono";
+  color: var(--less-dark-grayish-cyan);
+}
+
+.total:last-child {
+  margin-bottom: 6rem;
+}
+
+.btn-reset {
+  background: var(--less-dark-grayish-cyan);
+  color: var(--White);
+}
+
+.btn-reset:hover {
+  background: var(--Strong-light-cyan);
+}
+
+.btn-payment {
+  color: var(--Very-dark-cyan);
+  background: var(--Strong-cyan);
+}
+
+.btn-payment:hover {
+  background: var(--Very-dark-cyan);
+  color: var(--White);
+}
+
+/* f o o t e r */
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
