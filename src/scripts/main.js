@@ -1,7 +1,8 @@
 const valorConta = document.querySelector(".bill")
 const numPessoas = document.querySelector(".number-people")
-const campoTotal = document.querySelector(".total-person")
+const campoTotalPorPessoa = document.querySelector(".total-person")
 const campoGorjeta = document.querySelector(".tip")
+const campoValorTotal = document.querySelector(".total-value")
 const btnReset = document.querySelector(".btn-reset")
 const btnCalc = document.querySelector(".btn-calculate")
 const btnGorjeta = document.querySelectorAll(".percentage")
@@ -31,11 +32,14 @@ btnCalc.addEventListener("click", function (e) {
 
   // colocar os valores em duas variáveis
   // 1-gorjeta total por pessoa e 2-total por pessoa
-  var totalGorjeta = (gorjetaValor * conta) / pessoas
-  var total = (conta + totalGorjeta) / pessoas
+  var totalGorjetaPorPessoa = (gorjetaValor * conta) / pessoas
+  var totalPorPessoa = (conta + totalGorjetaPorPessoa) / pessoas
+  var totalGorjeta = gorjetaValor * conta
+  var valorTotal = conta + totalGorjeta
 
-  campoGorjeta.innerText = `$${totalGorjeta.toFixed(2)}`
-  campoTotal.innerText = `$${total.toFixed(2)}`
+  campoGorjeta.innerText = `$${totalGorjetaPorPessoa.toFixed(2)}`
+  campoTotalPorPessoa.innerText = `$${totalPorPessoa.toFixed(2)}`
+  campoValorTotal.innerText = `$${valorTotal.toFixed(2)}`
 })
 
 // Adicionar classe active no botão
@@ -60,7 +64,8 @@ btnReset.addEventListener("click", e => {
   numPessoas.value = ""
   inputGorjetaCustom.value = ""
   campoGorjeta.innerText = "$0.00"
-  campoTotal.innerText = "$0.00"
+  campoTotalPorPessoa.innerText = "$0.00"
+  campoValorTotal.innerText = "$0.00"
   resetBtnGorjeta()
   gorjetaValor = 0
 })
