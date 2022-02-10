@@ -1,11 +1,5 @@
 :root {
   /* C o l o r s */
-  /*--Strong-cyan: hsl(172, 67%, 45%);
-  --Strong-light-cyan: hsl(173, 61%, 77%);
-  --Strong-light-cyn: hsl(173, 39%, 69%);
-  --Very-dark-cyan: hsl(183, 100%, 15%);
-  --Light-more-grayish-cyan: hsl(189, 41%, 97%);
-  */
 
   --Dark-grayish-cyan: hsl(186, 14%, 43%);
   --less-dark-grayish-cyan: hsl(184, 14%, 56%);
@@ -57,10 +51,6 @@ input[type="number"] {
 
 input[type="number"]:hover {
   border: 3px solid var(--Cyan-dark);
-}
-
-input[type="number"]::placeholder {
-  color: var(--Green-darkish-light);
 }
 
 .btn {
@@ -217,13 +207,12 @@ main {
 }
 
 .btn-reset {
-  background: var(--Black-little-light);
+  background: var(--Gray-granny);
   color: var(--White);
 }
 
 .btn-reset:hover {
-  background: var(--Light-grayish-cyan);
-  color: var(--Black-almost);
+  background: var(--Black-little-light);
 }
 
 .btn-payment {
