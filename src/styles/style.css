@@ -1,15 +1,29 @@
 :root {
   /* C o l o r s */
-  --Strong-cyan: hsl(172, 67%, 45%);
+  /*--Strong-cyan: hsl(172, 67%, 45%);
   --Strong-light-cyan: hsl(173, 61%, 77%);
-  /*--Strong-light-cyn: hsl(173, 39%, 69%);*/
-
+  --Strong-light-cyn: hsl(173, 39%, 69%);
   --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Light-more-grayish-cyan: hsl(189, 41%, 97%);
+  */
+
   --Dark-grayish-cyan: hsl(186, 14%, 43%);
   --less-dark-grayish-cyan: hsl(184, 14%, 56%);
   --Light-grayish-cyan: hsl(185, 41%, 84%);
-  /*--Light-more-grayish-cyan: hsl(189, 41%, 97%);*/
+
   --White: hsl(0, 0%, 100%);
+  --Glass-effect: hsla(0, 0%, 100%, 0.1);
+  --Green-light: hsl(127, 50%, 55%, 0.8);
+  --Green-light-darkish: hsl(127, 51%, 45%);
+  --Green-darkish-light: hsl(70, 65%, 38%, 0.7);
+  --Green-darkish: hsl(70, 65%, 38%);
+  --Green-gray-darkish: hsl(75, 27%, 48%);
+  --Cyan-dark: hsl(172, 31%, 51%);
+  --Gray-granny: hsl(171, 10%, 59%);
+  --Lisbon-brown: hsl(44, 30%, 17%);
+  --Black-almost: hsl(30, 13%, 13%);
+  --Gray-granny-darkish: hsl(30, 2%, 30%);
+  --Black-little-light: hsl(30, 13%, 13%, 0.8);
 
   /* T y p o g r a p h y */
   --label: 700 24px "Space Mono";
@@ -36,14 +50,17 @@ input[type="number"] {
   width: 100%;
 
   background: whitesmoke;
-  color: #8aa022;
-  /*color: var(--Very-dark-cyan);*/
+  color: var(--Green-gray-darkish);
   font: var(--input);
   text-align: right;
 }
 
 input[type="number"]:hover {
-  border: 3px solid #5ba99e;
+  border: 3px solid var(--Cyan-dark);
+}
+
+input[type="number"]::placeholder {
+  color: var(--Green-darkish-light);
 }
 
 .btn {
@@ -65,7 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: url(../../assets/restaurant3.jpg);
+  background: url(../../assets/index.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -78,7 +95,7 @@ header {
   align-items: center;
   border-radius: 0.5rem;
   justify-content: space-around;
-  background-color: hsla(0, 0%, 100%, 0.1);
+  background-color: var(--Glass-effect);
   backdrop-filter: blur(20px);
 }
 
@@ -99,9 +116,8 @@ main {
   gap: 2rem;
   padding: 4rem;
   border-radius: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--Glass-effect);
   backdrop-filter: blur(15px);
-  /*box-shadow: 4px 4px 30px 1px rgba(127, 145, 147, 0.5);*/
 }
 
 .calculator label {
@@ -132,16 +148,15 @@ main {
   font: var(--btn-percentage);
   border: none;
   border-radius: 0.5rem;
-  background: hsl(38, 30%, 58%);
-  /* background: hsl(172, 67%, 45%);*/
-  color: var(--White);
-
+  background: whitesmoke;
+  color: var(--Lisbon-brown);
   cursor: pointer;
 }
 
 .calculator .tips .percentage:hover,
 .calculator .tips .percentage.active {
-  background: hsl(38, 35%, 40%);
+  background: var(--Lisbon-brown);
+  color: var(--White);
 }
 
 .calculator .tips .custom {
@@ -159,12 +174,12 @@ main {
 
 .btn-calculate {
   margin-top: 2rem;
-  background: hsl(30, 13%, 13%);
+  background: var(--Gray-granny);
   color: var(--White);
 }
 
 .btn-calculate:hover {
-  background: hsl(30, 2%, 30%);
+  background: var(--Gray-granny-darkish);
 }
 
 .results {
@@ -188,7 +203,7 @@ main {
 }
 
 .total p:last-child {
-  color: hsl(70, 65%, 38%, 0.8);
+  color: var(--Green-gray-darkish);
   font-size: 40px;
 }
 
@@ -202,22 +217,22 @@ main {
 }
 
 .btn-reset {
-  background: hsl(30, 13%, 13%, 0.8);
+  background: var(--Black-little-light);
   color: var(--White);
 }
 
 .btn-reset:hover {
   background: var(--Light-grayish-cyan);
-  color: hsl(30, 13%, 13%);
+  color: var(--Black-almost);
 }
 
 .btn-payment {
-  background: hsl(127, 50%, 45%, 0.8);
+  background: var(--Green-light);
   color: var(--White);
 }
 
 .btn-payment:hover {
-  background: hsl(127, 51%, 45%);
+  background: var(--Green-light-darkish);
 }
 
 /* f o o t e r */
@@ -225,8 +240,9 @@ main {
 .attribution {
   font-size: 14px;
   text-align: center;
+  color: whitesmoke;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: whitesmoke;
   text-decoration: none;
 }
