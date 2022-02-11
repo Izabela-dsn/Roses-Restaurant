@@ -13,9 +13,9 @@
   --Green-darkish: hsl(70, 65%, 38%);
   --Green-gray-darkish: hsl(75, 27%, 48%);
   --Cyan-dark: hsl(172, 31%, 51%);
-  --Gray-granny: hsl(171, 10%, 59%);
+  --Gray-granny: hsl(173, 5%, 61%);
   --Lisbon-brown: hsl(44, 30%, 17%);
-  --Black-almost: hsl(30, 13%, 13%);
+  --Black-almost: hsl(30, 12%, 13%);
   --Gray-granny-darkish: hsl(30, 2%, 30%);
   --Black-little-light: hsl(30, 13%, 13%, 0.8);
 
@@ -53,6 +53,10 @@ input[type="number"]:hover {
   border: 3px solid var(--Cyan-dark);
 }
 
+input[type="number"]::placeholder {
+  color: var(--Green-darkish-light);
+}
+
 .btn {
   width: 88%;
   margin-left: 1.5rem;
@@ -67,6 +71,9 @@ input[type="number"]:hover {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
 /* S P E C I F I C */
 body {
   display: flex;
@@ -107,7 +114,7 @@ main {
   padding: 4rem;
   border-radius: 1.5rem;
   background-color: var(--Glass-effect);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(7px);
 }
 
 .calculator label {
@@ -153,6 +160,10 @@ main {
   width: 92%;
   font: var(--input-custom);
   border-radius: 0.5rem;
+}
+.calculator .tips .custom,
+.calculator .tips .custom::placeholder {
+  color: var(--Lisbon-brown);
 }
 
 .calculator .number-people {
@@ -216,6 +227,7 @@ main {
 }
 
 .btn-payment {
+  padding: 0.5rem 4.7rem;
   background: var(--Green-light);
   color: var(--White);
 }
