@@ -1,0 +1,62 @@
+:root {
+  --font-h1: 400 32px "Goudy Bookletter 1911";
+  --font-p: 400 26px "Goudy Bookletter 1911";
+  --font-label: 400 24px "Goudy Bookletter 1911";
+  --font-warning: 700 17px "Space Mono";
+  --font-input: 400 22px "Goudy Bookletter 1911";
+  --font-btn: 400 20px "Goudy Bookletter 1911";
+}
+
+.restaurant-name {
+  margin-right: 1rem;
+}
+
+.container {
+  color: white;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.texto.boasVindas {
+  font: var(--font-h1);
+}
+
+.texto.info {
+  font: var(--font-p);
+}
+
+.info-mesa label {
+  font: var(--font-label);
+  margin-bottom: 1rem;
+}
+
+.info-mesa .nome-da-mesa {
+  display: flex;
+  border: none;
+  outline: 0;
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.2rem;
+  width: 100%;
+  margin: 1rem 0;
+
+  background: whitesmoke;
+  color: var(--Black-almost);
+  font: var(--font-input);
+}
+
+.info-mesa .avisos {
+  font: var(--font-warning);
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+.btn.btn-para-menu {
+  background: var(--White);
+  color: var(--Black-almost);
+  margin: 0;
+  font: var(--font-btn);
+  padding: 0.5rem 2rem;
+}

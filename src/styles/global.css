@@ -6,7 +6,7 @@
   --Light-grayish-cyan: hsl(185, 41%, 84%);
 
   --White: hsl(0, 0%, 100%);
-  --Glass-effect: hsla(0, 0%, 100%, 0.1);
+  --Glass-effect: hsla(118, 100%, 58%, 0.1);
   --Green-light: hsl(127, 50%, 55%, 0.8);
   --Green-light-darkish: hsl(127, 51%, 45%);
   --Green-darkish-light: hsl(70, 65%, 38%, 0.7);
@@ -75,17 +75,17 @@ main {
   padding: 4rem;
   border-radius: 1.5rem;
   background-color: var(--Glass-effect);
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(20px);
 }
 
 .btn {
   width: 88%;
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+  /*margin-left: 1.5rem;
+  margin-bottom: 1rem;*/
   border-radius: 0.5rem;
   padding: 0.5rem 0.2rem;
 
-  font: var(--btn-reset);
+  /*font: var(--btn-reset);*/
   text-transform: uppercase;
 
   border: none;
