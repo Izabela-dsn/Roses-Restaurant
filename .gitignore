@@ -11,6 +11,8 @@
 ###############################################
 *.xd
 
-# Avoid your project being littered with annoying .DS_Store files!
+# Avoid your project being littered with annoying .DS_Store files and others!
 .DS_Store
 .prettierignore
+/design
+/testes
