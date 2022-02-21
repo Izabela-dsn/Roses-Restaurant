@@ -20,13 +20,25 @@
   --Black-little-light: hsl(30, 13%, 13%, 0.8);
 
   /* T y p o g r a p h y */
+  /* Splitter */
   --label: 700 24px "Space Mono";
   --input: 700 22px "Space Mono";
   --input-custom: 700 20px "Space Mono";
   --btn-percentage: 700 26px "Space Mono";
   --btn-reset: 700 20px "Space Mono";
   --total: 700 18px "Space Mono";
-  --header: 400 32px "Goudy Bookletter 1911", serif;
+
+  /* Rose's */
+  --font-h1-header: 400 32px "Goudy Bookletter 1911";
+  --font-h2: 400 30px "Goudy Bookletter 1911";
+  --font-p: 400 26px "Goudy Bookletter 1911";
+  --font-label: 400 24px "Goudy Bookletter 1911";
+  --font-input: 400 22px "Goudy Bookletter 1911";
+  --font-btn: 400 20px "Goudy Bookletter 1911";
+  --font-item-menu: 400 18px "Goudy Bookletter 1911";
+  --font-item-menu-preco: 400 18px "Space Mono";
+  --font-warning: 700 16px "Space Mono";
+  --font-item-menu-descricao: 400 12px "Goudy Bookletter 1911";
 }
 
 * {
@@ -62,7 +74,7 @@ header {
 
 header .restaurant-name {
   margin-left: 1rem;
-  font: var(--header);
+  font: var(--font-h1-header);
   text-transform: uppercase;
   color: var(--White);
 }
@@ -80,12 +92,8 @@ main {
 
 .btn {
   width: 88%;
-  /*margin-left: 1.5rem;
-  margin-bottom: 1rem;*/
   border-radius: 0.5rem;
-  padding: 0.5rem 0.2rem;
-
-  /*font: var(--btn-reset);*/
+  padding: 0.5rem 0.5rem;
   text-transform: uppercase;
 
   border: none;

@@ -1,0 +1,49 @@
+.container {
+  color: white;
+  text-align: center;
+}
+
+.informacao-pedido {
+  margin-bottom: 3rem;
+}
+
+.informacao-pedido h2 {
+  font: var(--font-h2);
+}
+
+.informacao-pedido p {
+  margin: 1rem 0;
+}
+
+.informacao-pedido .nome-mesa {
+  font: var(--font-p);
+}
+
+.informacao-pedido .mensagem {
+  font: var(--font-label);
+}
+
+.pedido {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.item-pedido {
+  list-style: none;
+  display: flex;
+  margin: 0 0 1rem 1rem;
+  justify-content: space-between;
+  font: var(--font-label);
+}
+
+.item-pedido p:last-child {
+  margin-left: 15rem;
+  font: var(--font-item-menu-preco);
+}
+
+.btn {
+  background: white;
+  color: var(--Black-almost);
+  font: var(--font-btn);
+}

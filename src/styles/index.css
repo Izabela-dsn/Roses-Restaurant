@@ -1,12 +1,3 @@
-:root {
-  --font-h1: 400 32px "Goudy Bookletter 1911";
-  --font-p: 400 26px "Goudy Bookletter 1911";
-  --font-label: 400 24px "Goudy Bookletter 1911";
-  --font-warning: 700 17px "Space Mono";
-  --font-input: 400 22px "Goudy Bookletter 1911";
-  --font-btn: 400 20px "Goudy Bookletter 1911";
-}
-
 .restaurant-name {
   margin-right: 1rem;
 }
@@ -21,7 +12,7 @@ section {
 }
 
 .texto.boasVindas {
-  font: var(--font-h1);
+  font: var(--font-h1-header);
 }
 
 .texto.info {
