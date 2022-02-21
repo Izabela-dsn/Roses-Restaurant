@@ -1,5 +1,4 @@
 /* G E N E R A L */
-
 input[type="number"] {
   border: none;
   outline: 0;
@@ -87,6 +86,7 @@ input[type="number"]::placeholder {
   margin-top: 2rem;
   background: var(--Gray-granny);
   color: var(--White);
+  font: var(--font-btn);
 }
 
 .btn-calculate:hover {
@@ -123,13 +123,15 @@ input[type="number"]::placeholder {
   color: var(--less-dark-grayish-cyan);
 }
 
-.total:last-child {
-  margin-bottom: 4rem;
+.btn {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--White);
+  font: var(--font-btn);
 }
 
 .btn-reset {
   background: var(--Gray-granny);
-  color: var(--White);
 }
 
 .btn-reset:hover {
@@ -137,9 +139,8 @@ input[type="number"]::placeholder {
 }
 
 .btn-payment {
-  padding: 0.5rem 4.85rem;
   background: var(--Green-light);
-  color: var(--White);
+  padding: 0.7rem 1.4rem;
 }
 
 .btn-payment:hover {
