@@ -60,7 +60,7 @@ input[type="number"]::placeholder {
 }
 
 .calculator .tips .percentage:hover,
-.calculator .tips .percentage.active {
+.calculator .tips .percentage:focus {
   background: var(--Lisbon-brown);
   color: var(--White);
 }

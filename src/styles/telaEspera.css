@@ -29,19 +29,6 @@
   margin-bottom: 5rem;
 }
 
-.item-pedido {
-  list-style: none;
-  display: flex;
-  margin: 0 0 1rem 1rem;
-  justify-content: space-between;
-  font: var(--font-label);
-}
-
-.item-pedido p:last-child {
-  margin-left: 15rem;
-  font: var(--font-item-menu-preco);
-}
-
 .btn {
   background: white;
   color: var(--Black-almost);
