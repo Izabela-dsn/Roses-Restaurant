@@ -24,7 +24,7 @@
   --label: 700 24px "Space Mono";
   --input: 700 22px "Space Mono";
   --input-custom: 700 20px "Space Mono";
-  --btn-percentage: 700 26px "Space Mono";
+  --btn-percentage: 700 24px "Space Mono";
   --btn-reset: 700 20px "Space Mono";
   --total: 700 18px "Space Mono";
 
@@ -36,7 +36,8 @@
   --font-input: 400 22px "Goudy Bookletter 1911";
   --font-btn: 400 20px "Goudy Bookletter 1911";
   --font-item-menu: 400 18px "Goudy Bookletter 1911";
-  --font-item-menu-preco: 400 18px "Space Mono";
+  --font-item-menu-preco: 400 16px "Space Mono";
+  --font-item-menu-preco-show: 400 20px "Space Mono";
   --font-warning: 700 16px "Space Mono";
   --font-item-menu-descricao: 400 12px "Goudy Bookletter 1911";
 }
@@ -105,12 +106,15 @@ main {
   display: flex;
   margin: 0 0 1rem 1rem;
   justify-content: space-between;
+}
+
+.item-pedido p {
   font: var(--font-label);
 }
 
 .item-pedido p:last-child {
   margin-left: 15rem;
-  font: var(--font-item-menu-preco);
+  font: var(--font-item-menu-preco-show);
 }
 
 /* f o o t e r */

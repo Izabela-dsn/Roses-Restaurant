@@ -4,6 +4,7 @@ hr {
 }
 .container {
   text-align: center;
+  padding: 2rem;
 }
 
 .menu {
@@ -38,18 +39,24 @@ hr {
 
 .item-menu p:nth-child(2) {
   font: var(--font-item-menu-preco);
+  width: 50%;
 }
 
 .item-menu input {
-  width: 10%;
+  width: 15%;
   height: 10%;
-  padding: 0.1rem 1rem;
-  color: black;
+
+  padding-left: 0.5rem;
+  color: var(--Black-almost);
+  border-radius: 0.3rem;
+  text-align: left;
+  border: solid 0.1px var(--Black-almost);
 }
 
 .sobremesa-bebida hr {
-  width: 20vw;
+  width: 22vw;
   height: 0;
+  margin-left: 1rem;
 }
 
 .btn.btn-para-espera {

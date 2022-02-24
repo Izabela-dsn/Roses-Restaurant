@@ -1,3 +1,7 @@
+header .restaurant-name {
+  margin-left: 0;
+}
+
 .container {
   color: white;
   text-align: center;
