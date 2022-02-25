@@ -11,6 +11,7 @@ btn.addEventListener("click", () => {
       nomeDaMesa: nomeMesa
     })
     localStorage.setItem(`${nomeMesa}`, JSON.stringify(mesa))
+    alert(`Olá mesa ${nomeMesa}`)
   } catch (error) {
     alert(
       "Estamos com problemas técnicos por favor chame um de nossos colaboradores."
