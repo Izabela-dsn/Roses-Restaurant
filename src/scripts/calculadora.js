@@ -7,6 +7,7 @@ const btnReset = document.querySelector(".btn-reset")
 const btnCalc = document.querySelector(".btn-calculate")
 const btnGorjeta = document.querySelectorAll(".percentage")
 const inputGorjetaCustom = document.querySelector(".custom")
+const mesa = JSON.parse(localStorage.getItem("Mesa")) || []
 var gorjetaValor = 0
 
 // Calculo
@@ -40,6 +41,9 @@ btnCalc.addEventListener("click", function (e) {
   campoGorjeta.innerText = `$${totalGorjetaPorPessoa.toFixed(2)}`
   campoTotalPorPessoa.innerText = `$${totalPorPessoa.toFixed(2)}`
   campoValorTotal.innerText = `$${valorTotal.toFixed(2)}`
+
+  mesa[0].total = valorTotal
+  localStorage.setItem("Mesa", JSON.stringify(mesa))
 })
 
 // Adicionar classe active no botão
