@@ -52,12 +52,12 @@ hr {
   text-align: left;
   border: solid 0.1px var(--Black-almost);
 }
-
+/*
 .sobremesa-bebida hr {
   width: 22vw;
   height: 0;
   margin-left: 1rem;
-}
+}*/
 
 .btn.btn-para-espera {
   background: var(--White);
