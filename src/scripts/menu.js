@@ -18,8 +18,8 @@ btn.addEventListener("click", () => {
         pedido.push({ qtdDePratos, precoDoPrato, nomeDoPrato })
       }
     })
-    console.log(pedido)
-    mesa[0].pedido.push(pedido)
+    
+    mesa[mesa.length-1].pedido.push(pedido)
     localStorage.setItem("Mesa", JSON.stringify(mesa))
   } catch {
     alert(
