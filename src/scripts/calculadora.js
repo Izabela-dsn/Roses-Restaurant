@@ -8,19 +8,21 @@ const btnCalc = document.querySelector(".btn-calculate")
 const btnGorjeta = document.querySelectorAll(".percentage")
 const inputGorjetaCustom = document.querySelector(".custom")
 const mesa = JSON.parse(localStorage.getItem("Mesa")) || []
-var gorjetaValor = 0
 
 // Calculo
+valorConta.value = mesa[mesa.length-1].total
+const conta = parseFloat(mesa[mesa.length-1].total)
+var gorjetaValor = 0
+
 btnCalc.addEventListener("click", function (e) {
   e.preventDefault()
 
-  const conta = parseFloat(valorConta.value)
   const pessoas = parseInt(numPessoas.value)
-
-  if (isNaN(conta) || isNaN(pessoas)) {
+  
+  if(isNaN(pessoas)) {
     alert("Por favor preencha os campos vazios")
   }
-
+  
   if (inputGorjetaCustom.value === "") {
     for (let bt of btnGorjeta) {
       if (bt.classList.contains("active")) {
@@ -30,9 +32,7 @@ btnCalc.addEventListener("click", function (e) {
   } else {
     gorjetaValor = parseFloat(inputGorjetaCustom.value) / 100
   }
-
-  // colocar os valores em duas variáveis
-  // 1-gorjeta total por pessoa e 2-total por pessoa
+  
   var totalGorjetaPorPessoa = (gorjetaValor * conta) / pessoas
   var totalPorPessoa = (conta + totalGorjetaPorPessoa) / pessoas
   var totalGorjeta = gorjetaValor * conta
@@ -40,9 +40,9 @@ btnCalc.addEventListener("click", function (e) {
 
   campoGorjeta.innerText = `$${totalGorjetaPorPessoa.toFixed(2)}`
   campoTotalPorPessoa.innerText = `$${totalPorPessoa.toFixed(2)}`
-  campoValorTotal.innerText = `$${valorTotal.toFixed(2)}`
+  campoValorTotal.innerText = `$${valorTotal}`
 
-  mesa[0].total = valorTotal
+  mesa[mesa.length-1].total = valorTotal
   localStorage.setItem("Mesa", JSON.stringify(mesa))
 })
 
@@ -64,7 +64,6 @@ function resetBtnGorjeta() {
 // botão reset
 btnReset.addEventListener("click", e => {
   e.preventDefault()
-  valorConta.value = ""
   numPessoas.value = ""
   inputGorjetaCustom.value = ""
   campoGorjeta.innerText = "$0.00"
