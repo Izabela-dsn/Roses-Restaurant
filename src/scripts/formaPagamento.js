@@ -6,7 +6,6 @@ const campoValorTotal = document.querySelector(".item-pedido-valor")
 campoValorTotal.innerHTML = `R$ ${totalDaMesa.toFixed(2)}`
 
 //botões de pagamento
-const btns = document.querySelectorAll("button")
 const btnPix = document.querySelector(".btn-pix")
 const btnDinhCartao = document.querySelector(".btn-cartao-dinheiro")
 const pix = document.querySelector(".pix")
