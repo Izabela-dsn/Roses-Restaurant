@@ -140,7 +140,7 @@ input[type="number"]::placeholder {
 
 .btn-payment {
   background: var(--Green-light);
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 1.2rem;
 }
 
 .btn-payment:hover {

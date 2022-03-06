@@ -1,6 +1,6 @@
 //pegar valor total
 const mesa = JSON.parse(localStorage.getItem("Mesa")) || []
-const totalDaMesa = mesa[0].total
+const totalDaMesa = mesa[mesa.length-1].total
 
 const campoValorTotal = document.querySelector(".item-pedido-valor")
 campoValorTotal.innerHTML = `R$ ${totalDaMesa.toFixed(2)}`
