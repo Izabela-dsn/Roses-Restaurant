@@ -30,15 +30,30 @@
 
   /* Rose's */
   --font-h1-header: 400 32px "Goudy Bookletter 1911";
+  --font-h1-header-responsive: 400 28px "Goudy Bookletter 1911";
+
   --font-h2: 400 30px "Goudy Bookletter 1911";
+
   --font-p: 400 26px "Goudy Bookletter 1911";
+  --font-p-responsive: 400 24px "Goudy Bookletter 1911";
+
   --font-label: 400 24px "Goudy Bookletter 1911";
+  --font-label-responsive: 400 22px "Goudy Bookletter 1911";
+
+
   --font-input: 400 22px "Goudy Bookletter 1911";
+  --font-input-responsive: 400 20px "Goudy Bookletter 1911";
+
   --font-btn: 400 20px "Goudy Bookletter 1911";
+  --font-btn-responsive: 400 18px "Goudy Bookletter 1911";
+  
   --font-item-menu: 400 18px "Goudy Bookletter 1911";
   --font-item-menu-preco: 400 16px "Space Mono";
   --font-item-menu-preco-show: 400 20px "Space Mono";
+
   --font-warning: 700 16px "Space Mono";
+  --font-warning-responsive: 700 14px "Space Mono";
+  
   --font-item-menu-descricao: 400 12px "Goudy Bookletter 1911";
 }
 
@@ -127,4 +142,18 @@ main {
 .attribution a {
   color: whitesmoke;
   text-decoration: none;
+}
+
+/* responsividade */
+
+@media (max-width: 569px){
+  main{
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 350px){
+  main{
+    margin: 0 1rem;
+  }
 }
